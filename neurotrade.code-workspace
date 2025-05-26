@@ -1,0 +1,15 @@
+{
+	"folders": [
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		"DockerRun.DisableDockerrc": true,
+		"DockerRun.Containers": [
+			"ebed94ceba3a",
+			"a340464fa974",
+			"f79838e2460d"
+		]
+	}
+}
