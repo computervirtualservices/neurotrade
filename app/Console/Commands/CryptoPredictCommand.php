@@ -75,7 +75,7 @@ final class CryptoPredictCommand extends Command
             $pairName = $pair->ws_name;
             $interval = (int)$rawInterval ?: (int)$pair->interval;
             $this->info("Processing {$interval}m interval for pair: " . $pairName);
-            dispatch_sync(new ProcessCryptoPair($pairName, $interval, $autoTrade, $dryRun));
+            dispatch(new ProcessCryptoPair($pairName, $interval, $autoTrade, $dryRun));
             sleep(2);
         }
 
